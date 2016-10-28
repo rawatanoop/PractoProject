@@ -89,7 +89,7 @@ public class LoginController extends WebSecurityConfigurerAdapter {
 	@RequestMapping(value = "/logout")
 	public String logOut(HttpSession session) {
 		session.invalidate();
-		logger.info("Session is invalidated : logged out");
+		logger.info("Session is invalidated : logged out from account");
 		return "redirect:/index.html";
 	}
 
